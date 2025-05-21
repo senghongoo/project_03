@@ -14,7 +14,7 @@ a {
 
 body {
   font-family: "Nanum Gothic", sans-serif;
-  background-color: #ffffff;
+  background-color: #f8f8f8;
 }
 
 .container {
@@ -308,4 +308,77 @@ img[alt=awards] {
 img[alt=bg_text] {
   width: 1200px;
   height: 200px;
+}
+
+.yWelTopWrap {
+  width: 1200px;
+  height: 420px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #d8d8d8;
+  position: relative;
+  display: flex;
+}
+
+.mbnWrap {
+  width: 110px;
+  border-right: 1px solid #d8d8d8;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.mbnWrap > li {
+  line-height: 40px;
+  background-color: #ffffff;
+}
+
+.mbnWrap > li:first-child {
+  margin-top: 9px;
+}
+
+.mbnWrap > li:hover {
+  background-color: #0080ff;
+}
+
+.mbnWrap > li:hover a {
+  color: #ffffff;
+}
+
+.mbnWrap > li > a {
+  padding-left: 15px;
+  color: #000000;
+}
+
+.sub {
+  width: 130px;
+  height: 418px;
+  background-color: #ffffff;
+  display: none;
+  border-right: 1px solid #d8d8d8;
+  position: absolute;
+  top: 0;
+  left: 109px;
+  padding-left: 15px;
+  padding-top: 10px;
+  z-index: 2;
+}
+
+.sub > li {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: -1px;
+  font-weight: lighter;
+  color: #666666;
+}
+
+.sub > li:hover {
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+
+.slider {
+  width: 1089px;
+  z-index: 1;
 }

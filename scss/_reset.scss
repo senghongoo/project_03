@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "color";
 
 * {
     margin: 0;
@@ -16,5 +17,5 @@ a {
 
 body {
     font-family: "Nanum Gothic", sans-serif;
-    background-color: #ffffff;
+    background-color: $subcolor;
 }
