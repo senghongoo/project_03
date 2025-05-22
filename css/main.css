@@ -297,19 +297,6 @@ img[alt=awards] {
   height: auto;
 }
 
-.yWelBand {
-  width: 100%;
-  height: 200px;
-  margin-top: 20px;
-  text-align: center;
-  background: url(../img/bg.jpg) repeat center;
-}
-
-img[alt=bg_text] {
-  width: 1200px;
-  height: 200px;
-}
-
 .yWelTopWrap {
   width: 1200px;
   height: 420px;
@@ -328,21 +315,17 @@ img[alt=bg_text] {
   font-size: 14px;
   font-weight: bold;
 }
-
 .mbnWrap > li {
   line-height: 40px;
   background-color: #ffffff;
 }
-
 .mbnWrap > li:first-child {
   margin-top: 9px;
 }
-
-.mbnWrap > li:hover {
+.mbnWrap > li.hovered {
   background-color: #0080ff;
 }
-
-.mbnWrap > li:hover a {
+.mbnWrap > li.hovered a {
   color: #ffffff;
 }
 
@@ -362,7 +345,7 @@ img[alt=bg_text] {
   left: 109px;
   padding-left: 15px;
   padding-top: 10px;
-  z-index: 2;
+  z-index: 3;
 }
 
 .sub > li {
@@ -374,11 +357,121 @@ img[alt=bg_text] {
 }
 
 .sub > li:hover {
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
+  text-decoration: underline;
 }
 
 .slider {
   width: 1089px;
   z-index: 1;
+  position: relative;
+}
+
+.slider_img img {
+  display: none;
+}
+.slider_img img:first-of-type {
+  display: block;
+}
+
+.slider_button {
+  width: 1089px;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.slider_button button {
+  width: 217px;
+  height: 40px;
+  border: 0;
+  color: #666666;
+  background-color: #f8f8f8;
+  font-size: 13px;
+  line-height: 40px;
+}
+.slider_button button.hovered {
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.yWelTopMid {
+  width: 1200px;
+  height: 390px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.yWelMid {
+  width: 1200px;
+  height: 385px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #d8d8d8;
+}
+
+.yWelBand {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  text-align: center;
+  background: url(../img/bg.jpg) repeat center;
+}
+
+img[alt=bg_text] {
+  width: 1200px;
+  height: 200px;
+}
+
+.yWelMidBot {
+  width: 1200px;
+  height: 370px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #d8d8d8;
+}
+
+.yWelMultiSec {
+  width: 1200px;
+  height: 690px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #d8d8d8;
+}
+
+.yWelYesTv {
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #d8d8d8;
+}
+
+.yWelChYesCard {
+  width: 1200px;
+  height: 615px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #d8d8d8;
+}
+
+.yesServ {
+  width: 1200px;
+  height: 240px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #d8d8d8;
+}
+
+.yWelNotice {
+  width: 1200px;
+  height: 160px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }

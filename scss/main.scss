@@ -1,19 +1,6 @@
 @charset "utf-8";
 @import "reset", "color", "common";
 
-.yWelBand {
-    width: 100%;
-    height: 200px;
-    margin-top: 20px;
-    text-align: center;
-    background: url(../img/bg.jpg) repeat center;
-}
-
-img[alt="bg_text"] {
-    width: 1200px;
-    height: 200px;
-}
-
 .yWelTopWrap {
     width: 1200px;
     height: 420px;
@@ -31,23 +18,23 @@ img[alt="bg_text"] {
     display: inline-block;
     font-size: 14px;
     font-weight: bold;
-}
 
-.mbnWrap>li {
-    line-height: 40px;
-    background-color: $mainColor;
-}
+    &>li {
+        line-height: 40px;
+        background-color: $mainColor;
 
-.mbnWrap>li:first-child {
-    margin-top: 9px;
-}
+        &:first-child {
+            margin-top: 9px;
+        }
 
-.mbnWrap>li:hover {
-    background-color: $pointColor;
-}
+        &.hovered {
+            background-color: $pointColor;
 
-.mbnWrap>li:hover a {
-    color: $mainColor;
+            a {
+                color: $mainColor;
+            }
+        }
+    }
 }
 
 .mbnWrap>li>a {
@@ -66,7 +53,7 @@ img[alt="bg_text"] {
     left: 109px;
     padding-left: 15px;
     padding-top: 10px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .sub>li {
@@ -78,10 +65,124 @@ img[alt="bg_text"] {
 }
 
 .sub>li:hover {
-    text-decoration: solid;
+    text-decoration: underline;
 }
 
 .slider {
     width: 1089px;
     z-index: 1;
+    position: relative;
+}
+
+.slider_img img {
+    display: none;
+
+    &:first-of-type {
+        display: block;
+    }
+}
+
+.slider_button {
+    width: 1089px;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+        width: 217px;
+        height: 40px;
+        border: 0;
+        color: #666666;
+        background-color: #f8f8f8;
+        font-size: 13px;
+        line-height: 40px;
+
+        &.hovered {
+            color: $mainColor;
+            background-color: #333333;
+        }
+    }
+}
+
+.yWelTopMid {
+    width: 1200px;
+    height: 390px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.yWelMid {
+    width: 1200px;
+    height: 385px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: $mainColor;
+    border: 1px solid #d8d8d8;
+}
+
+.yWelBand {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    text-align: center;
+    background: url(../img/bg.jpg) repeat center;
+}
+
+img[alt="bg_text"] {
+    width: 1200px;
+    height: 200px;
+}
+
+.yWelMidBot {
+    width: 1200px;
+    height: 370px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: $mainColor;
+    border: 1px solid #d8d8d8;
+}
+
+.yWelMultiSec {
+    width: 1200px;
+    height: 690px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: $mainColor;
+    border: 1px solid #d8d8d8;
+}
+
+.yWelYesTv {
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: $mainColor;
+    border: 1px solid #d8d8d8;
+}
+
+.yWelChYesCard {
+    width: 1200px;
+    height: 615px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: $mainColor;
+    border: 1px solid #d8d8d8;
+}
+
+.yesServ {
+    width: 1200px;
+    height: 240px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: $mainColor;
+    border: 1px solid #d8d8d8;
+}
+
+.yWelNotice {
+    width: 1200px;
+    height: 160px;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
