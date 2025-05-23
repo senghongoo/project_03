@@ -30,4 +30,10 @@ $(function () {
         let n = $(this).index();
         $(".slider_img>img").hide().eq(n).show();
     });
+
+    $('.yWelYESFD').hover(function () {
+        $(this).find('span').css('display', 'block');
+    }, function () {
+        $(this).find('span').css('display', 'none');
+    });
 });
