@@ -58,7 +58,7 @@ $(function () {
         }
 
         return response.json();
-    }
+    };
 
     async function bookData() {
         try {
@@ -90,7 +90,7 @@ $(function () {
         } catch (error) {
             console.log('에러발생', error);
         }
-    }
+    };
 
     bookData();
 });
