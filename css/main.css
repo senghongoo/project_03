@@ -239,15 +239,15 @@ footer {
   margin-right: 150px;
 }
 .yFootCon .container div:first-of-type h4 {
+  margin-top: 10px;
   font-size: 14px;
   color: #999999;
-}
-.yFootCon .container div:first-of-type .yInfo {
-  font-size: 11px;
 }
 .yFootCon .container div:first-of-type .yInfo li {
   margin-top: 2px;
   color: #999999;
+  font-size: 11px;
+  line-height: 16px;
 }
 .yFootCon .container div:first-of-type .yInfo li:first-of-type {
   margin-top: 10px;

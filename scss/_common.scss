@@ -229,20 +229,19 @@ footer {
             margin-right: 150px;
 
             h4 {
+                margin-top: 10px;
                 font-size: 14px;
                 color: #999999;
             }
 
-            .yInfo {
+            .yInfo li {
+                margin-top: 2px;
+                color: #999999;
                 font-size: 11px;
+                line-height: 16px;
 
-                li {
-                    margin-top: 2px;
-                    color: #999999;
-
-                    &:first-of-type {
-                        margin-top: 10px;
-                    }
+                &:first-of-type {
+                    margin-top: 10px;
                 }
             }
 
