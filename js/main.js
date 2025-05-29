@@ -13,6 +13,25 @@ $(function () {
         }
     });
 
+    const $bnImgs = $('.bnList img');
+    let bnCurrentIndex = 0;
+
+    function updateBnBanner() {
+        $bnImgs.hide().eq(bnCurrentIndex).show();
+    }
+
+    updateBnBanner();
+
+    $('.bnNav button').eq(0).click(function () {
+        bnCurrentIndex = (bnCurrentIndex - 1 + $bnImgs.length) % $bnImgs.length;
+        updateBnBanner();
+    });
+
+    $('.bnNav button').eq(1).click(function () {
+        bnCurrentIndex = (bnCurrentIndex + 1) % $bnImgs.length;
+        updateBnBanner();
+    });
+
     $('.mbnWrap>li').hover(function () {
         $('.mbnWrap>li').removeClass("hovered");
         $(this).addClass("hovered");
@@ -35,6 +54,28 @@ $(function () {
         $(this).find('span').css('display', 'block');
     }, function () {
         $(this).find('span').css('display', 'none');
+    });
+
+    const $images = $('.FD_img img');
+    const $titles = $('.yWelYESFD h4');
+
+    let currentIndex = 0;
+
+    function updateDisplay() {
+        $images.hide().eq(currentIndex).show();
+        $titles.hide().eq(currentIndex).show();
+    }
+
+    updateDisplay();
+
+    $('.next').click(function () {
+        currentIndex = (currentIndex + 1) % $images.length;
+        updateDisplay();
+    });
+
+    $('.prev').click(function () {
+        currentIndex = (currentIndex - 1 + $images.length) % $images.length;
+        updateDisplay();
     });
 
     async function fetchBooks(query) {

@@ -67,6 +67,7 @@ header {
 .yHeaderMid .container {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 img[alt=logo] {
@@ -107,6 +108,40 @@ img[alt=logo] {
   line-height: 46px;
   margin: 0 20px;
   font-size: 24px;
+}
+
+.gnbBn {
+  position: absolute;
+  right: 0;
+  width: 180px;
+  height: 115px;
+}
+.gnbBn .bnList {
+  position: relative;
+}
+.gnbBn .bnList img {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.gnbBn .bnList img:first-child {
+  display: block;
+}
+.gnbBn .bnNav {
+  position: absolute;
+  bottom: 20px;
+  right: 5px;
+  display: flex;
+}
+.gnbBn .bnNav button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.gnbBn .bnNav button img {
+  width: 14px;
+  height: 14px;
 }
 
 .yHeaderBot {
@@ -213,7 +248,15 @@ footer {
 }
 .yFootSnsLi li:last-child {
   font-size: 18px;
-  margin-left: 5px;
+}
+.yFootSnsLi select {
+  height: 100%;
+  font-size: 11px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #333333;
+  background-color: #f8f8f8;
+  cursor: pointer;
 }
 
 .yFootSnsLi > * {
