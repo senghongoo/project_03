@@ -1,3 +1,160 @@
 @charset "utf-8";
 
 @import "reset", "color", "common";
+
+body {
+    background-color: $mainColor;
+}
+
+.cateLi li:nth-of-type(1) {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0 5px;
+}
+
+.yTopBn {
+    width: 100%;
+    height: 60px;
+    border-bottom: solid 1px #ebebeb;
+    background-color: #eee;
+
+    p {
+        line-height: 60px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #333;
+        text-align: center;
+
+        span {
+            color: #FF6666;
+            margin-left: 10px;
+        }
+    }
+}
+
+.yLocation {
+    width: 100%;
+    height: 40px;
+    border-bottom: solid 1px #e5e5e5;
+    background-color: #f8f8f8;
+
+    p {
+        width: 1200px;
+        line-height: 40px;
+        margin: 0 auto;
+        font-size: 12px;
+        color: #555;
+    }
+}
+
+.yDetailTopWrap {
+    width: 1200px;
+    height: 685px;
+    margin: 0 auto;
+    margin-top: 40px;
+
+    .topColLft {
+        width: 400px;
+        height: 650px;
+        position: relative;
+        perspective: 2000px;
+
+        .turn_book {
+            width: 400px;
+            height: 587.5px;
+            position: relative;
+            transition: 0.5s;
+            transform-style: preserve-3d;
+            transform: rotateY(0deg);
+
+            img {
+                width: 100%;
+                height: 100%;
+                transform: translateZ(-1px);
+                box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.2);
+                transition: box-shadow 0.5s ease;
+                backface-visibility: hidden;
+            }
+
+            &:hover {
+                transform: rotateY(40deg) !important;
+                cursor: url(../img/ico_flip.svg), pointer !important;
+
+                img {
+                    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+                    transition: box-shadow 0.5s ease;
+                }
+            }
+
+            &::before {
+                content: "";
+                width: 43px;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-image: url(../img/side.png);
+                filter: brightness(90%);
+                background-size: cover;
+                transform-origin: left;
+                transform: rotateY(90deg);
+            }
+
+            &::after {
+                content: "";
+                width: 400px;
+                height: 587.5px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-image: url(../img/back.jpg);
+                background-size: cover;
+                transform: rotateY(180deg) translateZ(44px);
+                box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.2);
+                backface-visibility: hidden;
+            }
+
+            &.rotate {
+                transform: rotateY(180deg) !important;
+            }
+        }
+
+        .button_list {
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            gap: 8px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        button {
+            width: 96px;
+            height: 30px;
+            line-height: 10px;
+            position: static;
+            padding: 0 4px;
+            background-color: $mainColor;
+            border: 1px solid #d8d8d8;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+    }
+
+    .topColRgt {
+        width: 760px;
+        height: 685px;
+    }
+}
+
+.yDetailBnWrap {
+    width: 1200px;
+    height: 102px;
+    margin: 40px auto 30px;
+}
+
+.nomiG_buy {
+    width: 1200px;
+    height: 403px;
+    margin: 0 auto;
+}
