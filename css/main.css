@@ -994,6 +994,11 @@ img[alt=midHTML] {
   font-size: 15px;
   letter-spacing: 0.5px;
 }
+.yWelYesTv .youtube iframe {
+  width: 640px;
+  height: 360px;
+  margin: 0 30px -15px 30px;
+}
 .yWelYesTv .youtube_info {
   width: 498px;
   height: 360px;
@@ -1238,6 +1243,12 @@ img[alt=midHTML] {
   width: 120px;
   height: 155px;
   margin: 0 10px;
+}
+.yesServ > div:nth-of-type(1) div dl:last-child dt {
+  width: 120px;
+  height: 51px;
+  background-color: #ffffff;
+  margin-bottom: 8px;
 }
 .yesServ > div:nth-of-type(1) div dl:last-child dd {
   margin-bottom: 8px;

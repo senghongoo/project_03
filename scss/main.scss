@@ -731,6 +731,12 @@ img[alt="midHTML"] {
             font-size: 15px;
             letter-spacing: 0.5px;
         }
+
+        iframe {
+            width: 640px;
+            height: 360px;
+            margin: 0 30px -15px 30px;
+        }
     }
 
     .youtube_info {
@@ -1017,6 +1023,13 @@ img[alt="midHTML"] {
                     width: 120px;
                     height: 155px;
                     margin: 0 10px;
+
+                    dt {
+                        width: 120px;
+                        height: 51px;
+                        background-color: #ffffff;
+                        margin-bottom: 8px;
+                    }
 
                     dd {
                         margin-bottom: 8px;
