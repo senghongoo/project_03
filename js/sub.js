@@ -92,6 +92,19 @@ $(function () {
                     `);
             })
 
+            const authorLi = ['머피의 하루', '어떤 날은', '바위와 소녀', '과거에도 미래에도, 우리는', '고양이 맥스의 비밀', '자기만의 방으로'];
+
+            authorLi.forEach(async (query, i) => {
+                const data = await fetchBooks(query);
+                const divs = $('.authorLi li');
+
+                divs.eq(i).append(`
+                    <img src=${data.documents[0].thumbnail}/>
+                    <h4>${data.documents[0].title}</h4>
+                    <h4><span>${data.documents[0].price*0.9}</span>원 (10% 할인)</h4>
+                    `);
+            })
+
         } catch (error) {
             console.log('에러발생', error);
         }
@@ -99,9 +112,10 @@ $(function () {
 
     bookData();
 
-    document.addEventListener("DOMContentLoaded", async function () {
+    async function txt() {
         try {
             const response = await fetch("./sub.txt");
+            console.log(response);
             if (!response.ok) {
                 throw new Error("Network response was not ok");
             }
@@ -110,5 +124,7 @@ $(function () {
         } catch (error) {
             console.error("There was a problem with the fetch operation:", error);
         }
-    });
+    }
+    
+    txt();
 });
