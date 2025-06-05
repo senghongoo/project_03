@@ -436,6 +436,7 @@ img[alt=awards] {
 .slider_button button.hovered {
   color: #ffffff;
   background-color: #333333;
+  cursor: pointer;
 }
 
 .yWelTopMid {
