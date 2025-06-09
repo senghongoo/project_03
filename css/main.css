@@ -1076,6 +1076,7 @@ img[alt=midHTML] {
 }
 .yWelChYesCard > div:nth-of-type(1) > div img {
   height: 140px;
+  border: 1px solid #d8d8d8;
 }
 .yWelChYesCard > div:nth-of-type(1) > div div {
   margin-left: 15px;

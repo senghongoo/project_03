@@ -123,7 +123,7 @@ $(function () {
                 const divs = $(list[i]).find('li');
 
                 for (let j = 0; j < divs.length; j++) {
-                    divs.eq(j).append("<img src=" + data.documents[j].thumbnail + "/>");
+                    divs.eq(j).append(`<a href="sub.html"><img src=${data.documents[j].thumbnail}/></a>`);
                     divs.eq(j).append("<h4>" + data.documents[j].title + "</h4>");
                     divs.eq(j).append("<h6>" + data.documents[j].authors + " 저</h6>");
                     divs.eq(j).append("<h5>" + data.documents[j].price + "원</h5>");
@@ -153,7 +153,7 @@ $(function () {
                 const divs = $('.yWelMultiSec > div:nth-of-type(1) ul li');
 
                 divs.eq(i).append(`
-                    <img src=${data.documents[0].thumbnail}/>
+                    <a href="sub.html"><img src=${data.documents[0].thumbnail}/></a>
                     <h4>${data.documents[0].title}</h4>
                     <h5>${data.documents[0].authors} 저</h5>
                     <h6>${data.documents[0].price} 원</h6>
@@ -167,7 +167,7 @@ $(function () {
                 const divs = $('.bookBox ul li');
 
                 divs.eq(i).append(`
-                    <img src=${data.documents[0].thumbnail}/>
+                    <a href="sub.html"><img src=${data.documents[0].thumbnail}/></a>
                     <h4>${data.documents[0].title}</h4>
                     `);
             })
